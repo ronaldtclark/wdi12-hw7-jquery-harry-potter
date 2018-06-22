@@ -34,15 +34,52 @@ $ul.append('<li class="secret">time turner</li>');
 $ul.append('<li class="owl">leash</li>');
 $ul.append("<li>Bertie Bott's every flavor jelly beans</li>");
 
+$h5 = $('<h5>Spring 2018</h5>')
+$container.append($h5)
 
+$table = $('<table>')
+$container.append($table)
+$tr1 = $('<tr>')
+$table.append($tr1)
+$th1 = $('<th>Day</th>')
+$th2 = $('<th>Classes</th>')
+$tr1.append($th1)
+$tr1.append($th2)
 
+$tr2 = $('<tr>')
+$table.append($tr2)
+$td1 = $('<td>Monday</td>')
+$td2 = $('<td>Herbology , Charms</td>')
+$tr2.append($td1)
+$tr2.append($td2)
 
+$tr3 = $('<tr>')
+$table.append($tr3)
+$td3 = $('<td>Tuesday</td>')
+$td4 = $('<td>Divination , Quidditch Practice</td>')
+$tr3.append($td3)
+$tr3.append($td4)
 
+$tr4 = $('<tr>')
+$table.append($tr4)
+$td5 = $('<td>Wednesday</td>')
+$td6 = $('<td>History of Magic</td>')
+$tr4.append($td5)
+$tr4.append($td6)
 
+$tr5 = $('<tr>')
+$table.append($tr5)
+$td7 = $('<td>Thursday</td>')
+$td8 = $('<td>Transfiguration, Potions</td>')
+$tr5.append($td7)
+$tr5.append($td8)
 
-
-
-
+$tr6 = $('<tr>')
+$table.append($tr6)
+$td9 = $('<td>Friday</td>')
+$td0 = $('<td>Defense Against the Dark Arts</td>')
+$tr6.append($td9)
+$tr6.append($td0)
 
 
 
