@@ -24,13 +24,15 @@ $container.append($h4)
 $h4_2 = $('<h4>Elderwood Wand with Phoenix Feather Core</h4>')
 $container.append($h4_2)
 
+$ul = $('<ul storage="trunk"> </ul>');
+$container.append($ul)
 
-
-
-
-
-
-
+$ul.append('<li>butter beer</li>');
+$ul.append('<li class="secret">invisibility cloak</li>');
+$ul.append('<li class="secret">magic map</li>');
+$ul.append('<li class="secret">time turner</li>');
+$ul.append('<li class="owl">leash</li>');
+$ul.append("<li>Bertie Bott's every flavor jelly beans</li>");
 
 
 
