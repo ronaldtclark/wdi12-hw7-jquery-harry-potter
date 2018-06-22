@@ -7,25 +7,25 @@ if (typeof jQuery == 'undefined'){
 
 // YEAR 1
 
-$container = $('#container')
+$container = $('#container');
 
-$h1 = $('<h1>Hogwarts</h1>')
-$container.append($h1)
+$h1 = $('<h1>Hogwarts Student Wizard</h1>');
+$container.append($h1);
 
 // YEAR 2
 
-$h2 = $('<h2>Victor Vivicus</h2>')
-$container.append($h2)
-$h3 = $('<h3>Ravenclaw</h3>')
-$container.append($h3)
-$h4 = $('<h4>Badger</h4>')
-$h4.addClass('owl')
-$container.append($h4)
-$h4_2 = $('<h4>Elderwood Wand with Phoenix Feather Core</h4>')
-$container.append($h4_2)
+$name = $('<h2>Victor Vivicus</h2>');
+$container.append($name);
+$school = $('<h3>Ravenclaw</h3>');
+$container.append($school);
+$pet = $('<h4>Badger</h4>');
+$pet.addClass('owl');
+$container.append($pet);
+$wand = $('<h4>Birch Wand with Unicorn Hair Core</h4>');
+$container.append($wand);
 
-$ul = $('<ul storage="trunk"> </ul>');
-$container.append($ul)
+$ul = $('<ul id="trunk"> </ul>');
+$container.append($ul);
 
 $ul.append('<li>butter beer</li>');
 $ul.append('<li class="secret">invisibility cloak</li>');
@@ -34,52 +34,66 @@ $ul.append('<li class="secret">time turner</li>');
 $ul.append('<li class="owl">leash</li>');
 $ul.append("<li>Bertie Bott's every flavor jelly beans</li>");
 
-$h5 = $('<h5>Spring 2018</h5>')
-$container.append($h5)
+$h5 = $('<h5>Spring 2018</h5>');
+$container.append($h5);
 
-$table = $('<table>')
-$container.append($table)
-$tr1 = $('<tr>')
-$table.append($tr1)
-$th1 = $('<th>Day</th>')
-$th2 = $('<th>Classes</th>')
-$tr1.append($th1)
-$tr1.append($th2)
+$table = $('<table>');
+  $container.append($table);
 
-$tr2 = $('<tr>')
-$table.append($tr2)
-$td1 = $('<td>Monday</td>')
-$td2 = $('<td>Herbology , Charms</td>')
-$tr2.append($td1)
-$tr2.append($td2)
+$tr1 = $('<tr>');
+  $table.append($tr1);
+$th1 = $('<th>Day</th>');
+$th2 = $('<th>Classes</th>');
+  $tr1.append($th1);
+  $tr1.append($th2);
 
-$tr3 = $('<tr>')
-$table.append($tr3)
-$td3 = $('<td>Tuesday</td>')
-$td4 = $('<td>Divination , Quidditch Practice</td>')
-$tr3.append($td3)
-$tr3.append($td4)
+$tr2 = $('<tr>');
+  $table.append($tr2);
+$td1 = $('<td>Monday</td>');
+$td2 = $('<td>Herbology , Charms</td>');
+  $tr2.append($td1);
+  $tr2.append($td2);
 
-$tr4 = $('<tr>')
-$table.append($tr4)
-$td5 = $('<td>Wednesday</td>')
-$td6 = $('<td>History of Magic</td>')
-$tr4.append($td5)
-$tr4.append($td6)
+$tr3 = $('<tr>');
+  $table.append($tr3);
+$td3 = $('<td>Tuesday</td>');
+$td4 = $('<td>Divination , Quidditch Practice</td>');
+  $tr3.append($td3);
+  $tr3.append($td4);
 
-$tr5 = $('<tr>')
-$table.append($tr5)
-$td7 = $('<td>Thursday</td>')
-$td8 = $('<td>Transfiguration, Potions</td>')
-$tr5.append($td7)
-$tr5.append($td8)
+$tr4 = $('<tr>');
+  $table.append($tr4);
+$td5 = $('<td>Wednesday</td>');
+$td6 = $('<td>History of Magic</td>');
+  $tr4.append($td5);
+  $tr4.append($td6);
 
-$tr6 = $('<tr>')
-$table.append($tr6)
-$td9 = $('<td>Friday</td>')
-$td0 = $('<td>Defense Against the Dark Arts</td>')
-$tr6.append($td9)
-$tr6.append($td0)
+$tr5 = $('<tr>');
+  $table.append($tr5);
+$td7 = $('<td>Thursday</td>');
+$td8 = $('<td>Transfiguration, Potions</td>');
+  $tr5.append($td7);
+  $tr5.append($td8);
+
+$tr6 = $('<tr>');
+  $table.append($tr6);
+$td9 = $('<td>Friday</td>');
+$td0 = $('<td>Defense Against the Dark Arts</td>');
+  $tr6.append($td9);
+  $tr6.append($td0);
+
+$wand.remove();
+
+$('#trunk li').eq(0).remove();
+
+$wand2 = $('<h4>Elderwood Wand with Phoenix Feather Core</h4>');
+  $wand2.insertAfter($pet);
+    $wand2.css('color', 'indigo');
+
+$pet.detach().appendTo($ul);
+  $pet.detach().insertAfter($school);
+
+
 
 
 
