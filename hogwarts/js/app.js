@@ -18,13 +18,13 @@ $name = $('<h2>Victor Vivicus</h2>');
 $container.append($name);
 $school = $('<h3>Ravenclaw</h3>');
 $container.append($school);
-$pet = $('<h4>Badger</h4>');
+$pet = $('<h4>Owl: "Badger"</h4>');
 $pet.addClass('owl');
 $container.append($pet);
-$wand = $('<h4>Birch Wand with Unicorn Hair Core</h4>');
+$wand = $('<h4>Wand: Birch with Unicorn Hair Core</h4>');
 $container.append($wand);
 
-$ul = $('<ul id="trunk"> </ul>');
+$ul = $('<ul id="trunk"> Trunk:</ul>');
 $container.append($ul);
 
 $ul.append('<li>butter beer</li>');
@@ -86,12 +86,17 @@ $wand.remove();
 
 $('#trunk li').eq(0).remove();
 
-$wand2 = $('<h4>Elderwood Wand with Phoenix Feather Core</h4>');
+$wand2 = $('<h4>Wand: Elderwood with Phoenix Feather Core</h4>');
   $wand2.insertAfter($pet);
     $wand2.css('color', 'indigo');
 
 $pet.detach().appendTo($ul);
   $pet.detach().insertAfter($school);
+
+$('.secret').hide('slow').delay(2000).show('slow');
+
+$('li.owl').addClass("cabbage");
+  $('li.owl').removeClass("cabbage");
 
 
 
