@@ -24,7 +24,7 @@ $container.append($pet);
 $wand = $('<h4>Wand: Birch with Unicorn Hair Core</h4>');
 $container.append($wand);
 
-$ul = $('<ul id="trunk"> Trunk:</ul>');
+$ul = $('<ul id="trunk"></ul>');
 $container.append($ul);
 
 $ul.append('<li>butter beer</li>');
@@ -34,7 +34,7 @@ $ul.append('<li class="secret">time turner</li>');
 $ul.append('<li class="owl">leash</li>');
 $ul.append("<li>Bertie Bott's every flavor jelly beans</li>");
 
-$h5 = $('<h5>Spring 2018</h5>');
+$h5 = $('<h5>------ Fall 2018 ------</h5>');
 $container.append($h5);
 
 $table = $('<table>');
@@ -97,6 +97,14 @@ $('.secret').hide('slow').delay(2000).show('slow');
 
 $('li.owl').addClass("cabbage");
   $('li.owl').removeClass("cabbage");
+
+$('#trunk').prepend('<li>butter beer</li>');
+
+$ul.removeAttr('id = "trunk"');
+  $ul.attr('id', 'chest');
+
+
+
 
 
 

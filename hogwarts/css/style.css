@@ -1,9 +1,14 @@
 body {
-  background-color: #F8F7FF;
+  background-color: #F6E7C5;
   text-align: center;
 }
 
 .owl {
+  /*font-family: fantasy;*/
+  /* I just hate the way this looks in the list*/
+}
+
+h4.owl {
   font-family: fantasy;
 }
 
@@ -48,4 +53,8 @@ th {
 
 .cabbage {
   color: chartreuse;
+}
+
+h1 {
+  font-family: cursive;
 }
